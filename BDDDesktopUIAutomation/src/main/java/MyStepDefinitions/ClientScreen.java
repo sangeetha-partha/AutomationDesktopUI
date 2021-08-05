@@ -43,8 +43,8 @@ public void the_user_clicks_on_CLIENT_Menu() throws Throwable {
 @Then("^the user clicks on ADD NEW$")
 public void the_user_clicks_on_ADD_NEW() throws Throwable {
 	String client = object.getElementfromDb("LoginScreen", "Button", "Addnewbutton");
-	object.sendKeysKeyboardTAB(client,"name");
-	object.sendKeysKeyboardEnter(client,"name");
+	object.sendKeysKeyboardTAB("Client menuDropDown","name");
+	object.sendKeysKeyboardEnter("Client menuDropDown","name");
 
 	
 }
